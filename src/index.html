@@ -5,52 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    
     <link href="../dist/output.css" rel="stylesheet">
-    <script src="./index.js"></script>
 </head>
 <body class="flex justify-center items-center box-border m-[100px]">
-    <div class="w-[428px] h-[926px] bg-black rounded-[30px]">
-        <div class = "flex ml-[50px] mt-[30px]">
+    <div class="w-[428px] h-[926px] bg-black rounded-[30px] px-[10px] py-[20px]">
+        <div class = "flex ml-[20px] ">
             <div class="text-white text-[20px] ">9:41</div>
-            <div class="ml-[210px] ">
+            <div class="ml-[250px] ">
                 <img src="./img/icon1.png" alt="inthernet" class="inline ">
                 <img src="./img/icon2.png" alt="wi-fi" class="inline">
                 <img src="./img/icon3.png" alt="battery" class="inline">
             </div>
         </div>
-        <div class="text-[90px] text-white mt-[200px] mr-[37px] text-right" >941</div>
-        <div class="flex flex-col gap-2">
+        <div class="text-[90px] text-white  pr-[10px] h-[356px] flex justify-end items-end">
+            <input id="tablo" type="text" value="0" class="tablo bg-black w-full text-right">
+        </div>
+        <div id="buttons" class="flex flex-col gap-2 mt-[10px]">
             <div class="flex justify-center gap-3 items-center text-center leading-[80px] font-medium">
-                <div class="w-[88px] h-[88px] bg-[#A5A5A5] rounded-[100px] text-[34px]">AC</div>
-                <div class="w-[88px] h-[88px] bg-[#A5A5A5] rounded-[100px] text-[34px]">+/-</div>
-                <div class="w-[88px] h-[88px] bg-[#A5A5A5] rounded-[100px] text-[34px]">%</div>
-                <div class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white">÷</div>
+                <button class="w-[88px] h-[88px] bg-[#A5A5A5] rounded-[100px] text-[34px] hover:bg-gray-300">AC</button>
+                <button class="w-[88px] h-[88px] bg-[#A5A5A5] rounded-[100px] text-[34px] hover:bg-gray-300">+/-</button>
+                <button class="w-[88px] h-[88px] bg-[#A5A5A5] rounded-[100px] text-[34px] hover:bg-gray-300">%</button>
+                <button class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white hover:bg-gray-300">÷</button>
             </div>
             <div class="flex justify-center gap-3 items-center text-center leading-[80px] font-medium">
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">7</div>
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">8</div>
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">9</div>
-                <div class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white">x</div>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">7</button>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">8</button>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">9</button>
+                <button class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white hover:bg-gray-400">x</button>
             </div>
             <div class="flex justify-center gap-3 items-center text-center leading-[80px] font-medium">
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">4</div>
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">5</div>
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">6</div>
-                <div class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white">-</div>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">4</button>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">5</button>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">6</button>
+                <button class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white hover:bg-gray-400">-</button>
             </div>
             <div class="flex justify-center gap-3 items-center text-center leading-[80px] font-medium">
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">1</div>
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">2</div>
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">3</div>
-                <div class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white">+</div>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">1</button>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">2</button>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">3</button>
+                <button class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white hover:bg-gray-400">+</button>
             </div>
             <div class="flex justify-center gap-3 items-center text-center leading-[80px] font-medium">
-                <div class="w-[190px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">0</div>
-                <div class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white">,</div>
-                <div class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white">=</div>
+                <button class="w-[190px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">0</button>
+                <button class="w-[88px] h-[88px] bg-[#333333] rounded-[100px] text-[34px] text-white hover:bg-gray-400">,</button>
+                <button class="w-[88px] h-[88px] bg-[#F1A33B] rounded-[100px] text-[34px] text-white hover:bg-gray-400">=</button>
             </div>
         </div>
     </div>
 </body>
+<script src="./index.js"></script>
 </html>
